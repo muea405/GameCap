@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/gameTitle"/>
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/titleCut"
+        android:text="summary " />
+
+    <TextView
+        android:id="@+id/titleNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/gameTitle"
+        android:layout_toLeftOf="@+id/gameOld"
+        android:layout_alignParentRight="true"
+        android:text="New Price: " />
+    <TextView
+        android:id="@+id/gameNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gameTitle"
+        android:text="10.00" />
+
+    <TextView
+        android:id="@+id/titleOld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/titleNew"
+        android:layout_toLeftOf="@+id/gameOld"
+        android:layout_alignParentRight="true"
+        android:text="Old Price: " />
+    <TextView
+        android:id="@+id/gameOld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gameNew"
+        android:text="10.00" />
+
+    <TextView
+        android:id="@+id/titleCut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/titleOld"
+        android:layout_toLeftOf="@+id/gameOld"
+        android:layout_alignParentRight="true"
+        android:text="Price Cut: " />
+    <TextView
+        android:id="@+id/gameCut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gameOld"
+        android:text="45" />
+    <TextView
+        android:id="@+id/gameCutPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gameOld"
+        android:text="%" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/summary"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>
